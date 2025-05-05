@@ -26,21 +26,11 @@ int main() {
                     break;
                 }
 
-                int validInput;
-                do {
-                    validInput= 0;
                     // Введення елементів
                     for (int i = 0; i < n; i++) {
                         printf("a[%d] = ", i);
                         scanf("%d", &a[i]);
-
-                        if (a[i] < 0) {
-                            printf("Ти що, серйозно? Вводиш від'ємне число? Повторюй усе з початку.\n");
-                            validInput = 1;
-                            break;
-                        }
                     }
-                } while (validInput);
 
                 // Обчислення суми кратних 5
                 int sum = 0;
